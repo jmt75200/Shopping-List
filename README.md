@@ -26,16 +26,21 @@ Add a button element with the contents of "add to shopping list" and an id of ad
 
 Add a click event handler to the add_shopping_list_item_button that will run a function called add_to_shoppnig_list()
 
+ http://www.w3schools.com/jsref/event_onclick.asp
+
 // ---- [ APP.JS ] ---- //
 Create an instance of ShoppingList.
 
 Invoke the shopping_list object's render() method, and store the output to a variable. Write the resulting output html into the content div.
+
+http://www.w3schools.com/jsref/prop_html_innerhtml.asp
 
 Create an add_shopping_list_item_button function that will read the value of the title and description fields, then create a new variable named new_shopping_list_item that will store the result of constructing a new ShoppingListItem and passing in the values of title and description.
 
 Invoke your shopping list's addItem by passing in your new_shopping_list_item.
 
 Re-render the shopping list.
+
 
 // BDD Testing using Mocha and Chai
 
@@ -60,7 +65,9 @@ ShoppingListItem has a method named uncheck
 
 ShoppingListItem has a method named render
   calling the instance's render method will return a string formatted in html, in an
-    element. ex: <li class="[is_done]"><span>[name]</span> <span>[description]</span></li> 
+    element. <li class="completed_[is_done]"><span>[name]</span> <span>[description]</span></li>. example: <li class="completed_false"><span>Avocado</span> <span>Must be eaten immediately.</span></li>
+
+hint: multiline strings in javascript need to be "escaped" 
 
 // ---- [ Shopping List ] ---- //
 ShoppingList is a class
